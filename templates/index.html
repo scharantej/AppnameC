@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Feed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Best Movie Plots of 2023</h1>
+
+<ul>
+{% for movie in movies %}
+<li>{{ movie.title }} - {{ movie.plot }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
